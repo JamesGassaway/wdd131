@@ -7,6 +7,15 @@ body {
     line-height: 1.5;
 }
 
+.dark {
+    background-color: #333;
+    color: white;
+}
+
+.dark h2 {
+    color: #4F9ACF;
+}
+
 .content {
     margin: auto;
     max-width: 600px
