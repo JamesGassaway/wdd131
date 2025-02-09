@@ -61,7 +61,7 @@ p {
 hr {
     border: none;
     background-color: var(--gold-color);
-    height: 3px;
+    height: 2px;
 }
 
 .article-container {
