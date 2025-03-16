@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+
 :root {
     --primary-color: #1B98E0;
     --secondary-color: #59c3c3;
@@ -46,16 +47,17 @@ header img {
 .searchbar {
     display: flex;
     border-style: solid;
-    border-width: 1px;
+    border-width: 2px;
     border-radius: 5px;
 }
 
 .searchbar input {
     width: 100%;
+    font-size: xx-large;
 }
 
 .searchbar img{
-    height: 25px;
+    height: 50px;
 }
 
 img {
@@ -63,6 +65,63 @@ img {
     size: 0.6em;
 }
 
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .social img {
     height: 100px;
+}
+
+.recipe-container {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.recipe {
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-image {
+    margin-bottom: 25px;
+}
+
+button {
+    font-family: var(--primary-font);
+    color: var(--text-dark);
+    font-size: 30px;
+}
+
+h2 {
+    font-family: var(--secondary-font);
+    font-size: 60px;
+    margin: 0;
+    color: var(--primary-color)
+}
+
+p {
+    font-family: var(--primary-font);
+    color: var(--text-dark);
+    font-size: 30px;
+}
+
+@media screen and (min-width: 900px) {
+    .recipe {
+        display: flex;
+        flex-direction: row;
+    }
+    .recipe-image {
+        margin-right: 25px;
+        margin-bottom: 0px;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
