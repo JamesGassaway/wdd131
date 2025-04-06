@@ -141,7 +141,7 @@ h3 {
 .page-container {
   display: flex;
   flex-direction: row;
-  margin: 20px 20%;
+  margin: 20px 15%;
   background-color: var(--accent1-color);
   border-style: groove;
   border-width: 15px;
