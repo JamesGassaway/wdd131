@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="James Gassaway" />
+    <meta name="description" content="This is a final project submisison created by James Gassaway for WDD 131 - Dynamic Web Fundamentals" />
+    <title>Textbox Maker</title>
+    <link rel="icon" type="image/x-icon" href="textBox_favicon.png">
+    <link rel="stylesheet" href="final.css" />
+    <script defer src="final.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Make your own textboxes below!</h1>
+    </header>
+    <main>
+        <div class="pages-container">
+            <div class="page-container">
+                <img class="profile" src="greybox.png" alt="cat gif" />
+                <form class="entry-data">
+                    <input type="hidden" name="page" value="0">
+                    <div class="options">
+                        <label>Profile: </label>
+                        <select name="images" class="images" onchange="changeImage(event)">
+                            <option value="greybox.png">None</option>
+                            <option value="cat_neutral.png">Cat</option>
+                            <option value="bunny_neutral.png">Bunny</option>
+                        </select>
+                        <label>Speed: </label>
+                        <select name="speeds" class="speeds">
+                            <option value="default">Default</option>
+                            <option value="slow">Slow</option>
+                            <option value="fast">Fast</option>
+                        </select>
+                    </div>
+                    <label class="textEntry" onchange="changeText(event)">
+                        <textarea type="text-entry" class="text-entry" placeholder="Enter your text here!"></textarea>
+                    </label>
+                </form>
+            </div>
+        </div>
+        <div class="optionButtons">
+            <button id="addPage">Add New Page</button>
+            <button id="deletePage">Delete Last Page</button>
+            <button id="generateTextbox">Make your textbox!</button>
+        </div>
+
+
+        <div class="textbox_container">
+            
+        </div>
+    </main>
+    <footer>
+        <p>©2025</p>
+        <p>Created by: James Gassaway</p>
+    </footer>
+</body>
+</html>

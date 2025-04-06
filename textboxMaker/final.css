@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Fuzzy+Bubbles:wght@400;700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #C0C053;
+    --secondary-color: #1A1A1A;
+    --accent1-color: #5353C0;
+    --accent2-color: #53C08A;
+    --accent3-color: #DBDBDB;
+  
+    /* change the values below to your chosen font(s) */
+    --heading-font: "Fuzzy Bubbles";
+    --paragraph-font: Lato, Helvetica, sans-serif;
+  
+    /* these colors below should be chosen from among your palette colors above */
+    --headline-color-on-white: var(
+      --primary-color
+    ); /* headlines on a white background */
+    --headline-color-on-color: white; /* headlines on a colored background */
+    --paragraph-color-on-white: var(
+      --primary-color
+    ); /* paragraph text on a white background */
+    --paragraph-color-on-color: white; /* paragraph text on a colored background */
+    --paragraph-background-color: var(--primary-color);
+    --nav-link-color: var(--primary-color);
+    --nav-background-color: var(--secondary-color);
+    --nav-hover-link-color: white;
+    --nav-hover-background-color: var(--primary-color);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: var(--heading-font);
+  font-size: 30px;
+  padding: 1em;
+  text-align: center;
+  text-shadow: 0px 0px 5px #000000;
+  color: var(--paragraph-color-on-color);
+  background-color: var(--paragraph-background-color);
+  border-style: groove;
+  border-width: 15px;
+  border-color: var(--paragraph-background-color);
+  border-radius: 10px;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: var(--heading-font);
+  font-size: 30px;
+  text-align: center;
+  text-shadow: 0px 0px 5px #000000;
+  color: var(--paragraph-color-on-color);
+  background-color: var(--paragraph-background-color);
+  border-style: groove;
+  border-width: 15px;
+  border-color: var(--paragraph-background-color);
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 30px;
+  padding: 1em;
+}
+
+header img {
+  width: 50px;
+}
+
+button {
+  background-color: var(--accent3-color);
+  font-size: 25px;
+}
+
+#changePage {
+  display: flex;
+  justify-content: center;
+  margin: 20px;
+}
+
+#profile-display {
+  display: flex;
+  justify-content: space-evenly;  
+  text-align: center;
+  font-size: 25px;
+  font-family: var(--paragraph-font);
+}
+
+img{
+  max-height: 256px;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-family: var(--heading-font);
+    color: var(--accent1-color);
+}
+
+h3 {
+  text-align: center;
+  font-family: var(--paragraph-font);
+  font-size: 30px;
+}
+
+.sample-textbox {
+    display: flex;
+    flex-direction: row;
+    margin: auto 20%;
+    background-color: var(--accent2-color);
+    border-style: groove;
+    border-width: 15px;
+    border-color: var(--accent2-color);
+    border-radius: 10px;
+}
+.sample-textbox img{
+    max-height: 256px;
+    margin: 20px;
+}
+.sample-textbox p {
+    color: var(--secondary-color);
+    font-size: 40px;
+    margin: 0;
+    padding: 20px;
+}
+
+.page-container {
+  display: flex;
+  flex-direction: row;
+  margin: 20px 20%;
+  background-color: var(--accent1-color);
+  border-style: groove;
+  border-width: 15px;
+  border-color: var(--accent1-color);
+  border-radius: 10px;
+}
+
+.sample-textbox-info {
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+}
+
+.sampleTextboxInfo button {
+  font-size: 25px;
+  margin: 20px;
+}
+
+.page-container img{
+  max-height: 256px;
+  margin: 20px;
+}
+
+.entry-data {
+  display: grid;
+  grid-template-rows: 1fr 3fr;
+  color: var(--primary-color);
+  font-size: 40px;
+  margin: 0;
+  padding: 20px;
+  width: 100%;
+}
+
+.optionButtons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.textbox_container {
+  margin: 20px;
+}
+
+.optionButtons button {
+  font-size: 25px;
+  margin: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: row;
+  grid-row: 1, 2;
+}
+.options select{
+  font-size: 20px;
+  margin: 10px;
+}
+.page-container label {
+  color: var(--primary-color);
+  font-size: 25px;
+  margin: 0;
+  padding: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 90%;
+  resize: none;
+  font-size: 20px;
+}
